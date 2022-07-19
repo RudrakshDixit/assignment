@@ -1,0 +1,16 @@
+User routes
+-> TO REGISTER: POST(/user/register)
+Body: name, location (pass the coordinates)
+
+-> TO Start trip: PUT(/user/start-trip)
+Body: user(user object), distLimit(optional), endLocation(coordinates)
+
+-> TO END trip: PUT(/user/register)
+Body: user(user object)
+
+Driver routes
+-> TO REGISTER: POST(/driver/register)
+Body: name, location (pass the coordinates)
+
+-> To toggle driver availability: PUT(/driver/available)
+Body: driverID(required), location(required if type is 'on'), type ('on' if availability is on)
